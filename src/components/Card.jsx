@@ -3,15 +3,15 @@ import { IconPlus } from "@tabler/icons-react";
 const Card = () => {
   return (
     <div className="h-screen w-screen flex justify-center items-center">
-      <div className="h-80 w-65 bg-white rounded-3xl flex flex-col justify-between">
+      <div className="h-95 w-70 bg-white rounded-3xl flex flex-col justify-between">
         <div className=" flex justify-center items-center p-3">
           <img
-            className="rounded-2xl h-60 w-65 object-cover"
+            className="rounded-2xl h-72 w-65 object-cover"
             src="https://plus.unsplash.com/premium_photo-1714195646981-221ce73e0d5f?q=80&w=689&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="img"
           />
         </div>
-        <div className="flex justify-between p-3">
+        <div className="flex justify-between p-3 pb-12">
           <div className="flex gap-2">
             <div className=" relative">
               <img
@@ -26,9 +26,11 @@ const Card = () => {
               <p className="font-normal text-[9px] text-neutral-400">12m ago</p>
             </div>
           </div>
-          <div className="flex justify-center items-center rounded-lg px-2 bg-neutral-900 text-white gap-0.5">
-            <IconPlus stroke={2} size={11} />
-            <p className="text-[10px] font-light tracking-tight">Add member</p>
+          <div className="flex justify-center items-center bg-neutral-800 text-neutral-200 text-[12px] px-3 py-2 rounded-md gap-0.5 ">
+            <div className="">
+              <IconPlus stroke={2} size={12} />
+            </div>
+            <p className="tracking-tight font-light"> Add members</p>
           </div>
         </div>
       </div>
