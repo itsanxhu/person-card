@@ -14,9 +14,13 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ["react", "react-dom"],
-          icons: ["lucide-react"],
+          icons: ["@tabler/icons-react"],
         },
       },
     },
+  },
+  preview: {
+    port: 3000,
+    open: true,
   },
 });

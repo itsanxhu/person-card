@@ -1,18 +1,14 @@
 import { IconPlus } from "@tabler/icons-react";
 
-const Card = () => {
+const Card = ({ img, profileImg, username, active }) => {
   return (
     <div className="h-screen w-screen flex justify-center items-center">
-      <div className="h-95 w-70 bg-white rounded-3xl flex flex-col justify-between cursor-pointer">
+      <div className="h-95 w-70 bg-white rounded-3xl flex flex-col justify-between cursor-pointer shadow-md">
         <div className=" flex justify-center items-center p-3">
           <div className="relative rounded-2xl overflow-hidden">
             <div className="transition-transform duration-500 ease-out hover:scale-110">
               {/* main img */}
-              <img
-                className="h-72 w-65 object-cover"
-                src="https://plus.unsplash.com/premium_photo-1714195646981-221ce73e0d5f?q=80&w=689&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="img"
-              />
+              <img className="h-72 w-65 object-cover" src={img} alt="img" />
 
               {/* BLUR LAYER */}
               <div
@@ -34,13 +30,15 @@ const Card = () => {
             <div className=" relative">
               <img
                 className="h-8 w-8 object-cover rounded-full"
-                src="https://plus.unsplash.com/premium_photo-1714195646981-221ce73e0d5f?q=80&w=689&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={profileImg}
                 alt="img"
               />
-              <div className="absolute h-2.5 w-2.5 bg-white border-3 border-green-500  rounded-full bottom-0 right-0"></div>
+              <div
+                className={`absolute h-2.5 w-2.5 bg-white border-3 rounded-full bottom-0 right-0 ${active ? "border-green-500" : "border-gray-400"} `}
+              ></div>
             </div>
             <div>
-              <p className="font-semibold text-[12px]">@sinne99</p>
+              <p className="font-semibold text-[12px]">@{username}</p>
               <p className="font-normal text-[9px] text-neutral-400">12m ago</p>
             </div>
           </div>
