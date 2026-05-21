@@ -3,12 +3,12 @@ import { IconPlus } from "@tabler/icons-react";
 const Card = ({ img, profileImg, username, active, time }) => {
   return (
     <div className="flex justify-center items-center">
-      <div className="h-95 w-70 bg-white rounded-3xl flex flex-col justify-between cursor-pointer shadow-md">
+      <div className="border border-neutral-300/90 h-95 w-70 bg-white rounded-3xl flex flex-col justify-between cursor-pointer shadow-md">
         <div className=" flex justify-center items-center p-3">
           <div className="relative rounded-2xl overflow-hidden">
             <div className="transition-transform duration-500 ease-out hover:scale-110">
               {/* main img */}
-              <img className="h-72 w-65 object-cover" src={img} alt="img" />
+              <img className=" h-72 w-65 object-cover" src={img} alt="img" />
 
               {/* BLUR LAYER */}
               <div
