@@ -1,8 +1,8 @@
 import { IconPlus } from "@tabler/icons-react";
 
-const Card = ({ img, profileImg, username, active }) => {
+const Card = ({ img, profileImg, username, active, time }) => {
   return (
-    <div className="h-screen w-screen flex justify-center items-center">
+    <div className="flex justify-center items-center">
       <div className="h-95 w-70 bg-white rounded-3xl flex flex-col justify-between cursor-pointer shadow-md">
         <div className=" flex justify-center items-center p-3">
           <div className="relative rounded-2xl overflow-hidden">
@@ -39,7 +39,7 @@ const Card = ({ img, profileImg, username, active }) => {
             </div>
             <div>
               <p className="font-semibold text-[12px]">@{username}</p>
-              <p className="font-normal text-[9px] text-neutral-400">12m ago</p>
+              <p className="font-normal text-[9px] text-neutral-400">{time}</p>
             </div>
           </div>
           <div className="flex justify-center items-center bg-neutral-800 text-neutral-200 text-[12px] px-2.5 rounded-md gap-0.5 transition-all duration-200 active:scale-95">
