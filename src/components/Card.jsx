@@ -1,6 +1,6 @@
 import { IconPlus } from "@tabler/icons-react";
 
-const Card = ({ img, profileImg, username, active, time }) => {
+const Card = ({ img, profileImg, username, online, time }) => {
   return (
     <div className="flex justify-center items-center">
       <div className="border border-neutral-300/90 h-95 w-70 bg-white rounded-3xl flex flex-col justify-between cursor-pointer shadow-md">
@@ -34,7 +34,7 @@ const Card = ({ img, profileImg, username, active, time }) => {
                 alt="img"
               />
               <div
-                className={`absolute h-2.5 w-2.5 bg-white border-3 rounded-full bottom-0 right-0 ${active ? "border-green-500" : "border-gray-400"} `}
+                className={`absolute h-2.5 w-2.5 bg-white border-3 rounded-full bottom-0 right-0 ${online ? "border-green-500" : "border-gray-400"} `}
               ></div>
             </div>
             <div>
